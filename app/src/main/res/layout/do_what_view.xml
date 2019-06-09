@@ -1,0 +1,165 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="316dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="25dp"
+        android:text="Who's doing what to keep your house in order?"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <android.support.constraint.ConstraintLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopup"
+                android:text="Dmitry"
+                tools:layout_editor_absoluteX="126dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="will"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toRightOf="@id/btnShow"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="clean"
+                android:text="clean the kitchen"
+                app:layout_constraintLeft_toRightOf="@id/textView1"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow" />
+
+            <Button
+                android:id="@+id/btnShowRecur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopupRecur"
+                android:text="every week"
+                app:layout_constraintTop_toBottomOf="@id/btnShow"
+                app:layout_constraintLeft_toLeftOf="@id/btnShow" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnShow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopup"
+                android:text="Deidre"
+                tools:layout_editor_absoluteX="126dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="will"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toRightOf="@id/btnShow2"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow2" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="clean"
+                android:text="take out the trash"
+                app:layout_constraintLeft_toRightOf="@id/textView2"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow2" />
+
+            <Button
+                android:id="@+id/btnShowRecur2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopupRecur"
+                android:text="every week"
+                app:layout_constraintTop_toBottomOf="@id/btnShow2"
+                app:layout_constraintLeft_toLeftOf="@id/btnShow2" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnShow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopup"
+                android:text="Silvia"
+                tools:layout_editor_absoluteX="126dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="will"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toRightOf="@id/btnShow3"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow3" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="clean the bathroom"
+                app:layout_constraintLeft_toRightOf="@id/textView3"
+                app:layout_constraintBaseline_toBaselineOf="@id/btnShow3" />
+
+            <Button
+                android:id="@+id/btnShowRecur3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="showPopupRecur"
+                android:text="every 2 weeks"
+                app:layout_constraintTop_toBottomOf="@id/btnShow3"
+                app:layout_constraintLeft_toLeftOf="@id/btnShow3" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

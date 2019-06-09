@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <item android:id="@+id/opt1"
+        android:title="Dmitry" />
+    <item android:id="@+id/opt2"
+        android:title="Silvia" />
+    <item android:id="@+id/opt3"
+        android:title="Deidre" />
+</menu>
